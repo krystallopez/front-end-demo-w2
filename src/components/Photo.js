@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
 
-function Photo() {
-  
-    return <img width="350" height="350" />;
+class Photo extends React.Component {
+    constructor(props) {
+        super(props)
+        
+    }
 
+
+  render() {
+    return <img width="350" height="350" src={this.props.imgUrl} alt= "random-image"/>;
+  }
 }
 
 export { Photo };
